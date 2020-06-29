@@ -1,0 +1,7 @@
+<small *ngIf='inValidCredentials'>{{errorMessage}}</small>
+<div>
+user name <input type="text" name="userName" [(ngModel)]="userName"/>
+password <input type = "password" name ="password" [(ngModel)]="password"/>
+
+<button (click) = handleLogInClick()>submit</button>
+</div>
